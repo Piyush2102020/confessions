@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/darkBack"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frameMain">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_above="@id/bnView"
+        android:id="@+id/frameLay"
+        android:layout_height="match_parent"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="200dp"
+        android:layout_above="@id/bnView"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/writePost"
+        android:src="@drawable/write"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="20dp"
+        android:layout_height="200dp"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        app:menu="@menu/bn_menu"
+        android:id="@+id/bnView"
+        android:background="@color/darkBack"
+        app:itemIconTint="@color/blue"
+        android:elevation="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="49dp"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="User"
+            android:fontFamily="@font/alegreya_sc_black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/userNamePrivate"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@id/userNamePrivate"
+            android:layout_above="@id/main"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/chatPrivate"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_above="@id/main"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/messagePic"
+        android:layout_marginLeft="30dp"
+        android:layout_height="300dp"/>
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/galleryPrivate"
+                android:layout_marginRight="6dp"
+                android:layout_width="24dp"
+                android:src="@drawable/gallery"
+                android:layout_height="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:ems="12"
+                android:backgroundTint="@color/black"
+                android:hint="Write a message..."
+                android:textColorHint="#939393"
+                android:id="@+id/messagePrivate"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/sendPrivate"
+                android:layout_width="24dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/send"
+                android:layout_height="24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+

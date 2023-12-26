@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBack"
+    tools:context=".edit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:id="@+id/dpP"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/backuse"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="Tap to add a picture"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:ems="12"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:hint="Name"
+                android:textColorHint="#959595"
+                android:background="@drawable/edit"
+                android:id="@+id/nameP"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="Username"
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:singleLine="true"
+                android:hint="Username"
+                android:textColorHint="#959595"
+                android:id="@+id/userNameP"
+                android:background="@drawable/edit"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="Instagram Url"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/profileUrl"
+                android:background="@drawable/edit"
+                android:hint="Instagram Url"
+                android:textColorHint="#959595"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Display my Profile on available Instagram List?"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+
+                    android:layout_width="wrap_content"
+                    android:trackTint="@color/blue"
+                    android:layout_marginLeft="3dp"
+                    android:thumbTint="@color/blue"
+                    android:id="@+id/instagramSwitch"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:text="LogOut"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/logOut"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/round_btn"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:text="Save"
+                    android:layout_gravity="center"
+                    android:id="@+id/save"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_btn_blue"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFAF"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Please provide the url carefully as it will direct the random users to your Instagram Account"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AFAFAF"
+            android:layout_margin="5dp"
+            android:text=" In case of any problems, please feel free to contact us on Instagram @confession.support"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Confessions..!!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/dialogContent"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Discover Exciting Features:\n\n- Express yourself with anonymous confessions and comments.\n- Connect with others through anonymous group chats.\n- Engage in anonymous video and audio calls.\n- Share images while maintaining your anonymity.\n-More exciting features in upcoming weeks..Stay Connected\n\nPlease note that your privacy and security are important to us. While you remain anonymous, the developer may access data for security purposes only."
+        android:layout_below="@id/dialogTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/round_btn_blue"
+        android:id="@+id/dialogCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:layout_below="@id/dialogContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

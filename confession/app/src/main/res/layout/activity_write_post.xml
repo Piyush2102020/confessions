@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkBack"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write Something"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your post here..."
+        android:layout_below="@id/textViewHeading"
+        android:textColorHint="#8E8E8E"
+        android:background="@drawable/backpost"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/post"
+    android:visibility="gone"
+    android:id="@+id/card"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/pic"
+        android:layout_height="200dp">
+    </ImageView>
+</androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_below="@id/card"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn"
+       android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:id="@+id/gallery"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/gallery" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/round_btn_blue"
+            android:text="Share"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note:- Please note that uploading explicit or inappropriate content, violating others' privacy, or any content that may be against the law is strictly prohibited and in case of upload of such data you may be charged and your account may be permanently suspended. By using this app, you agree to adhere to these guidelines."
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+
+  />
+
+
+</RelativeLayout>

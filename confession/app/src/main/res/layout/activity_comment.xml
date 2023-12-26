@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comment">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/backpost"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 day ago"
+            android:textColor="#3C3C3C"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a sample post message"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Comments"
+        android:textColor="@color/blue"
+        android:id="@+id/title"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_below="@id/main"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_above="@id/edit"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@id/title"
+        android:id="@+id/comments"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:background="@color/darkBack"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:ems="12"
+            android:backgroundTint="@color/black"
+            android:hint="Post a comment..."
+            android:textColorHint="@color/black"
+            android:id="@+id/comment"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/send"
+            android:id="@+id/send"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

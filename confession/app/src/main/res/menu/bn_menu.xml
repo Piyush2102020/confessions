@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/homeTab"
+        android:title=""
+        android:icon="@drawable/homeicon"/>
+
+
+
+    <item android:id="@+id/globeTab"
+        android:title=""
+        android:icon="@drawable/world"/>
+
+    <item android:id="@+id/userTab"
+        android:title=""
+        android:icon="@drawable/usernew"/>
+
+
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/darkBack"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:gravity="center"
+        android:text="Welcome To\n Anonymous Chats...!!!"
+        android:textColor="@color/blue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:ems="12"
+        android:textColorHint="#636363"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:singleLine="true"
+        android:id="@+id/randomName"
+        android:hint="Pick a Username..."
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:text="Chat"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#676666"
+        android:layout_margin="20dp"
+        android:text="*Be respectful and kind to others.\nRemember that the company is not liable for any data shared by you.\n*Your identity will be anonymous, but the developer may access data if required by law."
+        android:layout_height="wrap_content"/>
+</LinearLayout>
